@@ -1,0 +1,61 @@
+:root {
+  --color-background: #fcfaf6;
+  --color-gradient-start: #fffdf7;
+  --color-gradient-end: #faf4e8;
+  --color-accent: #c79a56;
+  --color-text: #4a3041;
+  --color-contrast: #6e7e5f;
+  --color-highlight: #e6b89c;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-background);
+  color: var(--color-text);
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, var(--color-gradient-start) 0%, var(--color-gradient-end) 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
